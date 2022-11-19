@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TCNO</title>
+</head>
+
+<body>
+    <div class="container">
+ <script type="text/javascript">
+            var a = "" + (0|9e8 * Math.random() + 1e8),
+                b = a.split("").map(function(t) {return 0|t}),
+                c = b[0] + b[2] + b[4] + b[6] + b[8],
+                d = b[1] + b[3] + b[5] + b[7],
+                e = (7 * c - d) % 10;
+            tc.innerHTML = a + ("" + e) + ("" + (d + c + e) % 10)
+        </script>
+    </div>
+</body>
+
+</html>
